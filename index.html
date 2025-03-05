@@ -23,30 +23,25 @@
 </header>
 
 <body>
-  <p>
 
-  </p>
-  <script>
-    function myButtonClicked() {
-      alert("The Answer Is....coming out soon")
-    }
-  </script>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"></div>
-  <header class="mdl-layout__header-row">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Button Sim</span>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      Press or Push, if you put in a number
-    </div>
-    <!-- Simple Textfield for integers-->
-    <form action="#">
+    <header class="mdl-layout__header-row">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Button Sim</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        Press or Push, if you put in a number
+      </div>
       <br />
-      <!-- input pattern attribute -->
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length" />
+      <!-- Simple Textfield for integers-->
+      <form action="#">
+        <br />
+        <!-- input pattern attribute -->
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length" />
       <!-- mdl-textfield__label -->
       <label class="mdl-textfield__label" for="demo-input">
         Length of ... (mm)</label>
@@ -55,13 +50,14 @@
       </div>
       <br />
       <!-- Raised button with ripple -->
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="myButtonClicked()">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" 
+        onclick="myButtonClicked()" type="button">
         PUSH ME!!!
       </button>
     </form>
     <br>
     <div class="page-content-answer">
-      <div id="answer">Your <mom class=""></mom>
+      <div id="answer"> Waiting <class=""></mom>
       </div>
       <img
         src="./images/kisspng-javascript-web-applications-scalable-vector-graphi-1713908433870-ezgif.com-webp-to-jpg-converter.jpg"
